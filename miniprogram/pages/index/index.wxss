@@ -1,0 +1,141 @@
+/* pages/index/index.wxss */
+.index-top{
+    padding-left: 10px;
+}
+.index-top .top-title .zhiding{
+    color:red;
+    font-size: 18px;
+}
+.index-top .top-title .top-author{
+    margin-left: 10px;
+    font-size: 16px;
+    color: #aaa;
+}
+.index-top .top-content{
+    margin-top: 10px;
+}
+.viewStyle{
+    margin-top: 10px;
+    background: #fff;
+    padding: 20px;
+}
+.total{
+    /* margin-left: 10px; */
+}
+.total .rest{
+    /* border-left: 2px solid #ddd; */
+    /* padding: 10px; */
+    /* margin-left: 3px; */
+}
+.total .rest .title{
+    font-size: 20px;
+    line-height: 30px;
+}
+.total .rest .content{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 26px;
+    max-height:78px;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.total .rest .action{
+    display:flex;
+    margin-right: 0;
+    justify-content:space-between;
+    margin-top: 10px;
+
+}
+.total .rest .action view{
+    width: 80px;
+    height: 20px;
+    font-size: 16px;
+}
+.total .rest .action view image{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.total .rest .action view text{
+    vertical-align: middle;
+    padding-left: 10px;
+}
+/*  */
+.author-detail{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    margin-bottom: 30rpx;
+}
+
+.author-detail .nhead{
+    width: 30px;
+    height: 30px;   
+    border-radius: 50%;
+}
+.author-detail .nauthor{
+    font-size: 12px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+/* 热点精选部分 */
+.hot{
+    padding: 0px;
+    /* height: 500px !important; */
+    /* height: 300px !important; */
+    /* height: auto; */
+}
+.hot .hot-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 20px;
+}
+.hot .hot-top image{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.hot .hot-top .hot-name{
+    font-size: 18px;
+}
+.hot .hot-top .findMore{
+    font-size: 16px;
+    color: gray;
+    vertical-align: middle;
+}
+.hot .hot-top .findMore image{
+    margin-left: 10px;
+}
+/* 轮播 */
+.hot .carousel{
+    display: flex;
+    height: auto;
+    /* height: 200px; */
+    margin-top: 20px;
+    overflow:auto;
+    position: relative;
+}
+.hot .carousel view{
+    width: 80%;
+    /* height: 100%; */
+    margin: 0px 5px;
+}
+.hot .carousel view image{
+    height: 200px;
+    border-radius: 5%;
+}
+.hot .carousel .carousel-text{
+    width: 100%;
+    color: #fff;
+    margin: 5px;
+    position: absolute;
+    top:110px;
+    left: 0;
+}
+.hot .carousel .carousel-text .carousel-title{
+    height: auto;
+}

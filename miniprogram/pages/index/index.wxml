@@ -1,0 +1,89 @@
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="推荐">
+        <!-- 首页置顶的信息 -->
+        <view class="index-top viewStyle">
+            <view class="top-title">
+                    <text class="zhiding">置顶</text>
+                    <text class="top-author">央视网新闻</text>
+            </view>
+            <view class="top-content">央视独家新闻|习近平：老百姓的幸福就是共产党的事业</view>
+        </view>
+        <!-- 热点精选 -->
+        <view class="hot viewStyle">
+            <view class="hot-top">
+                <!-- 头部左侧 -->
+                <view>
+                    <!-- 热点logo -->
+                    <image src="../../images/hot.png" class="hot-image"></image>
+                    <!-- 名称 -->
+                    <text class="hot-name">热门精选</text>
+                </view>
+                <!-- 头部右侧 -->
+                <view class="findMore">查看更多<image src="../../images/youjiantou.png"></image> </view>
+            </view>
+            <!-- 轮播 -->
+            <view class="carousel">
+                <view class="item1">
+                    <image src="../../images/21.png"></image>
+                    <!-- 轮播上的文字 -->
+                    <view class="carousel-text">
+                        <!-- 标题 -->
+                        <view class="carousel-title">
+                            <text>英国驻港领馆港籍雇员被拘原因曝光：因嫖娼在深圳被抓</text>
+                        </view>
+                        <!-- 时间和评论 -->
+                        <view>
+                            <text>2小时前</text>
+                            <text>7.9万评</text>
+                        </view>
+                    
+                    </view>
+                </view>
+                <view class="item1">
+                    <image src="../../images/22.png"></image>
+                </view>
+                <view class="item1">
+                    <image src="../../images/23.jpg"></image>
+                </view>
+            </view>
+        </view>
+        <!-- 正文轮播下面的信息 -->
+        <view class="total viewStyle" wx:for="{{list}}" wx:key="index">
+                <!-- 新闻整个内容 -->
+                <!-- 上方的发布方头像和名字 -->
+                <view class="author-detail">
+                    <!-- 发布方头像 -->
+                    <image src="../../images/{{item.nhead}}" class="nhead"></image>
+              
+                    <!-- 发布方名称 -->
+                    <text class="nauthor">{{item.nauthor}}</text>
+                </view>
+                <view class="rest">
+                    <!-- 标题 -->
+                    <view class="title">{{item.ntitle}}</view>
+                    <!-- 内容 -->
+                    <view class="content">{{item.ncontent}}</view> 
+                    <!-- 用户操作 -->
+                    <view class="action">
+                            <!-- 评论 -->
+                            <view>
+                                <image src="../../images/duanxin.png"></image>
+                                <text bindtap="jump">669</text>
+                            </view>
+                            <!-- 分享好友 -->
+                            <view>
+                                <image src="../../images/weixin.png"></image>
+                                <text>好友</text>
+                            </view>
+                            <!-- 分享朋友圈 -->
+                            <view>
+                                <image src="../../images/pengyouquan.png"></image>
+                                <text>朋友圈</text>
+                            </view>
+                    </view> 
+                </view>
+		</view>
+	</van-tab>
+  <van-tab title="视频">内容 2</van-tab>
+  <van-tab title="本地">内容 3</van-tab>
+</van-tabs>

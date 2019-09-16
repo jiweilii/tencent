@@ -1,0 +1,34 @@
+<!--pages/home/home.wxml-->
+<!--pages/profile/profile.wxml-->
+<view class="profile" wx:if='{{xianshi}}'>
+		<view class="profile-img">
+		<!-- 获取当前用户的头像 -->
+				<open-data type="userAvatarUrl"></open-data>
+		</view>
+		<!-- 获取当前用户的名字 -->
+		<view class="profile-name">
+				<open-data type="userNickName"></open-data>
+		</view>	
+		<view class="profile-sex">{{sex}}</view>
+		<van-button class="profile-set" type="danger" size="small" round>设置</van-button>
+</view>
+<van-dialog
+  use-slot
+  title="获得您的信息"
+  show="{{ show }}"
+  show-cancel-button
+  confirm-button-open-type="getUserInfo"
+  bind:close="onClose"
+  bind:getuserinfo="getUserInfo"
+>
+</van-dialog>
+<!-- 附加标签3个 -->
+<van-tabs swipeable wx:if='{{xianshi}}'>
+  <van-tab title="通知"></van-tab>
+  <van-tab title="分享圈"></van-tab>
+  <van-tab title="评论">
+    <view></view>
+  </van-tab>
+</van-tabs>
+
+

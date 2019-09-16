@@ -1,0 +1,36 @@
+/* pages/home/home.wxss */
+.profile{
+	/* background: #5072a3; */
+	height:200rpx;
+	text-align: center;
+	position: relative;
+	width:100%;
+    /* display: flex; */
+}
+.profile-img{
+	position: absolute;
+	width:150rpx;
+	height:150rpx;
+	display: block;
+	overflow: hidden;
+	border-radius: 50%;
+	top:25rpx
+}
+.profile-name{
+    position: absolute;
+    top: 30rpx;
+    left: 200rpx;
+}
+.profile-sex{
+    position: absolute;
+    top: 100rpx;
+    left: 200rpx;
+}
+.profile-set{
+    position: absolute;
+    top: 70rpx;
+    right: 50rpx;
+    /* background: #f44; */
+    /* display: block; */
+    /* padding: 50px; */
+}

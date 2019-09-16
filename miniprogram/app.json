@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/news/news",
+        "pages/index/index",
+        "pages/pinglun/pinglun"
+    ],
+    "window": {
+        "backgroundColor": "#ff0",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "腾讯新闻",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "color": "#8a8a8a",
+        "selectedColor": "#2c2c2c",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/shouye1.png",
+                "selectedIconPath": "images/shouye.png"
+            },
+            {
+                "pagePath": "pages/news/news",
+                "text": "快讯",
+                "iconPath": "images/shandianfahuo1.png",
+                "selectedIconPath": "images/shandianfahuo.png"
+            },
+            {
+                "pagePath": "pages/home/home",
+                "text": "我",
+                "iconPath": "images/zhaoshengkuaixun1.png",
+                "selectedIconPath": "images/zhaoshengkuaixun.png"
+            }
+        ]
+    }
+}

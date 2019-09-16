@@ -1,0 +1,72 @@
+/* pages/news/news.wxss */
+.van-tab--active {
+    background: red !important;
+    color: #fff !important;
+    width: 20%;
+}
+.van-tabs__line.van-tabs__line{
+    display: none;
+}
+.van-tabs__nav .van-tab{
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 36px !important;
+    background: #efefef;
+    border-radius:10em;
+}
+
+scroll-view{
+    height: 80%;
+}
+.total{
+    margin-left: 10px;
+}
+.total .time{
+    color: red;
+    font-size: 16px;
+}
+.total .rest{
+    border-left: 2px solid #ddd;
+    padding: 20px;
+    margin-left: 3px;
+}
+.total .rest .title{
+    font-size: 20px;
+    line-height: 24px;
+}
+.total .rest .content{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 26px;
+    height: 78px;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.total .rest .action{
+    display:flex;
+    margin-right: 0;
+    justify-content:flex-end;
+
+}
+.total .rest .action view{
+    width: 80px;
+    height: 20px;
+    font-size: 16px;
+}
+.total .rest .action view image{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.total .rest .action view button{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    /* padding-left: 10px; */
+    padding: 0px;
+    width: 60px;
+    height: 20px;
+}

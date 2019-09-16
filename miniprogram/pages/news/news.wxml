@@ -1,0 +1,42 @@
+<van-tabs active="{{ active }}" >
+  <van-tab title="全部" >
+		<view class="total" wx:for="{{list}}" wx:key="index">
+				<!-- <view class="date">{{item.ndate}}</view> -->
+                <!-- 新闻发布时间 -->
+                <view class="time">○{{item.ndate}}</view>
+                <!-- 新闻整个内容 -->
+                <view class="rest">
+                    <!-- 标题 -->
+                    <view class="title">{{item.ntitle}}</view>
+                    <!-- 内容 -->
+                    <view class="content">{{item.ncontent}}</view> 
+                    <!-- 用户操作 -->
+                    <view class="action">
+                            <!-- 评论 -->
+                          <view bindtap="jump" data-id="{{item.nid}}">
+                                <image data-_id="{{item._id}}" src="../../images/duanxin.png"></image>
+                                <text>{{item.npinglun.length}}</text>
+                            </view>
+                            <!-- 分享好友 -->
+                            <view>
+                                <image src="../../images/weixin.png"></image>
+                                <button open-type="share">好友</button>
+                            </view>
+                            <!-- 分享朋友圈 -->
+                            <view bindtap="shareFriendCircle">
+                                <image src="../../images/pengyouquan.png"></image>
+                                <text>朋友圈</text>
+                            </view>
+                    </view> 
+                </view>
+		</view>
+	</van-tab>
+  <van-tab title="娱乐" ></van-tab>
+  <van-tab title="体育"></van-tab>
+  <van-tab title="科技"></van-tab>
+  <van-tab title="社会"></van-tab>
+  <van-tab title="财经"></van-tab>
+  <van-tab title="军事"></van-tab>
+  <van-tab title="时政"></van-tab>
+</van-tabs>
+

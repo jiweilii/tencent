@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+		"van-dialog": "vant-weapp/dialog/index",
+		"van-tab": "vant-weapp/tab/index",
+		"van-tabs": "vant-weapp/tabs/index",
+		"van-button": "vant-weapp/button/index",
+		"van-rate": "/vant-weapp/rate/index",
+		"van-field": "/vant-weapp/field/index",
+		"van-toast": "/vant-weapp/toast/index"
+	}
+}
